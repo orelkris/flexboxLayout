@@ -1,0 +1,142 @@
+.main-content {
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+.main-content article {
+  margin-bottom: 1.5rem;
+}
+
+.main-content img {
+  max-width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.article-title {
+  font-size: 1.4rem;
+  order: -2;
+}
+
+.article-feature {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(7, 57, 131);
+}
+
+.article-feature img {
+  margin-bottom: 1.5rem;
+}
+
+.article-feature .article-info,
+.article-feature img {
+  order: -1;
+}
+
+.article-info {
+  display: flex;
+}
+
+.article-recent-secondary img {
+  min-height: 150px;
+  object-fit: cover;
+}
+
+.publish-date::after {
+  margin: 0.3rem;
+  content: "|";
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.article-recent-secondary {
+  align-self: stretch;
+  order: -1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.article-recent-secondary img,
+.article-recent-secondary .article-info {
+  align-self: start;
+}
+
+.article-recent-main p,
+.article-feature p {
+  font-size: 0.9rem;
+}
+
+.main-content .continue,
+.main-content .article-info p {
+  font-size: 0.875rem;
+}
+
+.continue:hover,
+.continue:focus {
+  cursor: pointer;
+  color: rgb(5, 28, 61);
+  text-decoration: underline;
+}
+
+.main-content .continue {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.article-recent .article-info {
+  margin-bottom: 0;
+  align-self: start;
+}
+
+.article-recent-main {
+  margin-top: 0;
+}
+
+.article-recent .continue {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .article-recent-main {
+    margin-top: -4.5em;
+  }
+
+  .article-recent .article-info {
+    margin-bottom: 0;
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .article-title {
+    order: 0;
+  }
+  .article-recent-main {
+    margin-top: 0;
+  }
+
+  .article-recent .article-info {
+    margin-bottom: 0;
+    align-self: start;
+  }
+
+  .article-recent {
+    flex-direction: row;
+  }
+
+  .article-recent-secondary img,
+  .article-recent-secondary .article-info {
+    align-self: center;
+  }
+
+  main {
+    width: 65%;
+  }
+} ;

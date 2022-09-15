@@ -1,0 +1,76 @@
+.sidebar {
+  font-size: 1rem;
+  width: 500px;
+}
+
+.sidebar h3,
+.sidebar h2,
+.sidebar p {
+  font-family: Ubuntu, sans-serif;
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  order: -2;
+}
+
+.sidebar-box {
+  font-size: 0.75rem;
+  background: #fff;
+  border: 20px solid rgb(7, 57, 131, 0.5);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-widget {
+  width: 100%;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(7, 57, 131);
+}
+.sidebar-widget:last-child,
+.sidebar-widget:last-child h3 {
+  border: none;
+  margin-bottom: 0;
+}
+
+.sidebar-body {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.widget-image {
+  align-self: center;
+  width: 100%;
+  max-width: 120px;
+  order: -1;
+}
+
+.widget-recent-post {
+  text-align: center;
+  align-self: center;
+  font-size: 1rem;
+}
+
+.sidebar-body {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .sidebar {
+    align-self: start;
+    width: 30%;
+  }
+
+  .sidebar-body {
+    font-size: 0.85rem;
+  }
+}

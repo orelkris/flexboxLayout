@@ -1,0 +1,127 @@
+/* Reset and Margin Default */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 1em/1.5 "Comic Sans MS", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+img,
+hr {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+}
+
+/* Layout */
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1 > span {
+  color: rgb(95, 4, 4, 0.7);
+}
+
+main {
+  padding-right: 0.5em;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgb(228, 214, 201);
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-wrap: wrap-reverse;
+}
+
+.row > * {
+  padding: 0.5em 0.75em 0;
+}
+
+.col-bg {
+  background: rgb(95, 4, 4);
+  color: rgb(238, 131, 89);
+}
+
+.col-1x {
+  flex: 1 0 25%;
+}
+
+.col-2x {
+  flex: 1 0 50%;
+}
+
+.col-3x {
+  flex: 1 0 75%;
+}
+
+@media screen and (max-width: 599px) {
+  main {
+    padding-left: 0.5em;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .col-1x {
+    order: -1;
+  }
+
+  .col-1x.col-bg {
+    order: -2;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 875px) {
+  .col-1x {
+    flex: 1 0 50%;
+    order: 1;
+  }
+
+  .col-2x {
+    flex: 1 0 100%;
+  }
+
+  .col-3x {
+    flex: 1 0 100%;
+  }
+
+  .row {
+    align-items: stretch;
+  }
+}

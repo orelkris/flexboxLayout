@@ -1,0 +1,93 @@
+/* HEADER */
+header .container {
+  background: none;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: rgb(243, 213, 77, 0.3);
+  padding: 2em 0;
+}
+
+header h1 {
+  font-family: "Lora", serif;
+  font-size: 2.375rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+header .subtitle {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgb(95, 4, 4);
+  margin-bottom: 0;
+}
+
+header span {
+  color: rgb(95, 4, 4);
+}
+
+/* MAIN NAVIGATION */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-nav-list {
+  list-style: none;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav-list li {
+  margin-left: 1.5em;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: rgb(95, 4, 4);
+  font-weight: bold;
+  padding: 0.3em 0;
+}
+
+/* Whenever there is a hover state, there should also be a focus state */
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #000;
+}
+
+.current-page {
+  border-bottom: 1px solid black;
+}
+
+.main-nav .current-page:hover {
+  color: rgb(95, 4, 4);
+}
+
+@media screen and (max-width: 875px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .subtitle {
+    margin-bottom: 1em;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+  }
+
+  .main-nav-list li {
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+}
